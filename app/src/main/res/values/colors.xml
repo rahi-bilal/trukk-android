@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#464646</color>
+    <color name="colorPrimaryDark">#302f2f</color>
+    <color name="colorAccent">#FEBA02</color>
+
+    <color name="colorOrange">#F28020</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#CCCCCC</color>
+    <color name="colorMGrey">#909090</color>
+    <color name="colorLGrey">#DBDBDB</color>
+    <color name="skyGreen">#EBEFF3</color>
+    <color name="blueButton">#1EA2DC</color>
+    <color name="colorPrimaryTransparent">#ED464646</color>
+    <color name="colorGreenButton">#2C9728</color>
+    <color name="colorError">#D50000</color>
+    <color name="colorBorder">#28334A</color>
+    <color name="colorHeading">#28334A</color>
+    <color name="colorTextContactUs">#343434</color>
+    <!--Bottom Sheets Colors-->
+    <color name="bottomBg">#77000000</color>
+
+    <!--Profile Colors-->
+    <color name="colorProfileBg">#5B5B5B</color>
+</resources>

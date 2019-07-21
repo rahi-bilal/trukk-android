@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    app:elevation="4dp"
+    app:layout_behavior="@string/bottom_sheet_behavior" >
+
+    <ScrollView
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/lyt_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp">
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_pricing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorHeading"
+                android:text="@string/pricing"/>
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_receive_quotation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pricing"
+                app:layout_constraintEnd_toStartOf="@id/tv_fixed_price"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_border"
+                android:textSize="12sp"
+                android:textColor="@color/colorHeading"
+                android:text="@string/receiveQuotations"/>
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_fixed_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/tv_receive_quotation"
+                app:layout_constraintTop_toBottomOf="@id/tv_pricing"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/btn_orange_bg"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:text="@string/fixedPrice"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_pricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_receive_quotation">
+
+                <com.trukk.customviews.EditTextOpenSans
+                    android:id="@+id/edt_enter_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:background="@drawable/enter_amount_grey_bg"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorHeading"
+                    android:hint="@string/enterYour"
+                    />
+
+                <com.trukk.customviews.TextViewOpenSans
+                    android:id="@+id/tv_jod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/tv_jod_bg"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/jod"/>
+
+            </LinearLayout>
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_how_would"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lyt_pricing"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorHeading"
+                android:text="@string/howWould"/>
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_cod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_how_would"
+                app:layout_constraintEnd_toStartOf="@id/tv_card"
+                android:layout_marginRight="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_border"
+                android:drawableLeft="@drawable/ic_cash_on_delivery"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="@string/cod"/>
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/tv_cod"
+                app:layout_constraintTop_toBottomOf="@id/tv_how_would"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:background="@drawable/bg_grey_border"
+                android:drawableLeft="@drawable/ic_debit_card"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="@string/card"/>
+
+            <com.trukk.customviews.ButtonOpenSans
+                android:id="@+id/btn_bottom_sheet_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_cod"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btn_orange_bg"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:text="@string/done"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

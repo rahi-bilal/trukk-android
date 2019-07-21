@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "457933505614",
+    "firebase_url": "https://trukk-bb83a.firebaseio.com",
+    "project_id": "trukk-bb83a",
+    "storage_bucket": "trukk-bb83a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457933505614:android:129b927a3fd093e5",
+        "android_client_info": {
+          "package_name": "com.trukk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457933505614-da68qsmh2ea2ueobth7ig65dvtdp14as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOWvFKx-UTOXKuV4OVFoqhpkZeZC-mGi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457933505614-da68qsmh2ea2ueobth7ig65dvtdp14as.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "457933505614-fko4362shq9d2hfo839imj7j978a9n2m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.codebuzzers.trukkApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

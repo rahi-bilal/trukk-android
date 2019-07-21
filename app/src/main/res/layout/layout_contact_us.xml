@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/lyt_contact_us_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp">
+
+            <com.trukk.customviews.TextViewOpenSans
+                android:id="@+id/tv_contact_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="32dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextContactUs"
+                android:text="@string/contactUs"
+                />
+
+            <com.trukk.customviews.EditTextOpenSans
+                android:id="@+id/edt_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:inputType="textCapWords"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_user_orange_24dp"
+                android:drawablePadding="16dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorTextContactUs"
+                android:hint="@string/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_contact_us" />
+
+            <View
+                android:id="@+id/hr_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_contact_name"/>
+
+            <com.trukk.customviews.EditTextOpenSans
+                android:id="@+id/edt_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorTextContactUs"
+                android:drawableLeft="@drawable/ic_email_orange_24dp"
+                android:drawablePadding="16dp"
+                android:textSize="18sp"
+                android:hint="@string/email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hr_contact_name" />
+
+            <View
+                android:id="@+id/hr_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_email_id"/>
+
+            <com.trukk.customviews.EditTextOpenSans
+                android:id="@+id/edt_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:inputType="numberSigned"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorTextContactUs"
+                android:drawableLeft="@drawable/ic_mobile_orange"
+                android:drawablePadding="16dp"
+                android:textSize="18sp"
+                android:hint="@string/phone_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hr_email_id" />
+
+            <View
+                android:id="@+id/hr_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_phone_number"/>
+
+            <com.trukk.customviews.EditTextOpenSans
+                android:id="@+id/edt_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorTextContactUs"
+                android:drawableLeft="@drawable/ic_pencil"
+                android:drawablePadding="16dp"
+                android:textSize="18sp"
+                android:hint="@string/subject"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hr_phone_number" />
+
+            <View
+                android:id="@+id/hr_subject"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_subject"/>
+            <LinearLayout
+                android:id="@+id/lyt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hr_subject"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:src="@drawable/ic_email_orange_24dp"
+                    />
+                <com.trukk.customviews.EditTextOpenSans
+                    android:id="@+id/edt_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorTextContactUs"
+                    android:textSize="18sp"
+                    android:singleLine="false"
+                    android:gravity="top"
+                    android:hint="@string/message"
+                    />
+            </LinearLayout>
+            <View
+                android:id="@+id/hr_message"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lyt_message"/>
+
+            <com.trukk.customviews.ButtonOpenSans
+                android:id="@+id/btn_contact_us_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hr_message"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/btn_orange_bg"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:text="@string/submit"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
